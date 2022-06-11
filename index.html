@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <img src="./images/logo.svg" class="logo" alt="splitter logo" />
+    <main class="main">
+      <section class="top__half">
+        <section class="bill">
+          <form>
+            <label for="bill" class="top__label">Bill</label>
+            <div class="bill__textbox">
+              <img
+                src="./images/icon-dollar.svg"
+                alt="dollar icon"
+                class="dollar__icon"
+              />
+              <input
+                type="number"
+                name="bill"
+                id="bill"
+                placeholder="0"
+                step="0.01"
+                min="0.00"
+              />
+            </div>
+          </form>
+        </section>
+
+        <section class="tip">
+          <form>
+            <label class="top__label">Select Tip %</label>
+            <div class="tip__button__section">
+              <button class="tip__button">5%</button>
+              <button class="tip__button">10%</button>
+              <button class="tip__button">15%</button>
+              <button class="tip__button">25%</button>
+              <button class="tip__button">50%</button>
+              <input
+                type="number"
+                name="tip"
+                id="tip"
+                placeholder="Custom"
+                step="0.01"
+                min="0.00"
+              />
+            </div>
+          </form>
+        </section>
+
+        <section class="people">
+          <form>
+            <label for="people" class="top__label">Number of People</label>
+            <div class="people__textbox">
+              <img
+                src="./images/icon-person.svg"
+                alt="person icon"
+                class="people__icon"
+              />
+              <input
+                type="number"
+                name="people"
+                id="people"
+                placeholder="0"
+                step="1"
+                min="0"
+              />
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <section class="bottom__half">
+        <section class="total__reset">
+          <div class="total__container tc__top">
+            <div class="total__desc">
+              <h2>Tip Amount</h2>
+              <span>/ person</span>
+            </div>
+            <input
+              type="text"
+              readonly="readonly"
+              placeholder="$0.00"
+              class="total__num"
+            />
+          </div>
+          <div class="total__container">
+            <div class="total__desc tc__bottom">
+              <h2>Total</h2>
+              <span>/ person</span>
+            </div>
+            <input
+              type="text"
+              readonly="readonly"
+              placeholder="$0.00"
+              class="total__num"
+            />
+          </div>
+          <button class="reset__button">RESET</button>
+        </section>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
